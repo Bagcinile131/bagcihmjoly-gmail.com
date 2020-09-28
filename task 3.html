@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration</title>
+<link rel="stylesheet" type="text/css" href="Registration1.css" />
+<style>
+table {
+	font-family : Helvetica;
+	font-size : 100%;
+  font-weight: bold;
+ 
+}
+ h1 {
+   color: 
+
+ #3333cc;
+   font-family:Blackadder ITC;
+ }
+ 
+ input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.btn {
+  background-color: #3333cc;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.btn:hover {
+  opacity: 1;
+}
+
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<fieldset>
+<h1>Covid19 Pre-screening Form</h1>
+<h4>By submitting this form, you agree you have nail, skin, or body service during the pandemics<h4>
+<hr>
+<form name = "myForm" action = "handle.php" method = "POST">
+	  <label><b> First Name</b> </label>
+	  <input type = "text"  placeholder= "Please enter your  first name" name= "First Name" size= "40px" maxlength = "8"
+	  id ="Username" required = "required"/></p>
+	  <p>
+	   <label><b> Last Name </b></label>
+	  <input type = "text"  placeholder= "Please enter your last name" name = "Last Name" size= "40px" id="last name" maxlength ="8"  
+	  required = "required" />
+	 </p>
+          <p>
+	   <label><b> Age </b></label>
+	  <input type = "text"  placeholder= "Please enter your age" name = "Last Name" size= "40px" id="age" maxlength ="8"  
+	  required = "required" />
+	 </p>
+	  <p>
+	   <label><b> Temperature </b></label>
+	  <input type = "text"  placeholder= "Please enter your temperature" name = "Temperature" size= "40px" id="temperature" maxlength ="8"  
+	  required = "required" />
+	 </p>
+ 
+<h4>By checking this boxes, you confirm that you agree with the following statements<h4>
+
+  <input type="checkbox" id="box1" name="box1" value="box1">
+  <label for="box1"> I agreeto obey the rules during my appointment in order to minimize the spread of viruses</label><br>
+  <input type="checkbox" id="box2" name="box2" value="box2">
+  <label for="box2"> I confirm that i have not been diagnosed with COVID-19 in the past 14 days</label><br>
+  <input type="checkbox" id="vehicle3" name="box3" value="box3">
+  <label for="box3"> I verify that i am not waiting for the laboratory test results for COVID-19</label><br><br>
+  <input type="submit" value="Submit">
+
+	 </fieldset>
+</body>
+</html>
+
